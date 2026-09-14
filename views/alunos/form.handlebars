@@ -1,0 +1,21 @@
+<div class="formulariocentro">
+<h2>{{#if aluno}}Editar aluno{{else}}Cadastrar aluno{{/if}}</h2>
+<form action="{{acao}}" method="{{metodo}}" class="formulario">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" value="{{aluno.nome}}" required placeholder="Raphael">
+
+  <label for="ra">RA</label>
+  <input type="text" id="ra" name="ra" value="{{aluno.ra}}" required placeholder="201">
+
+  <label for="email">E-mail</label>
+  <input type="email" id="email" name="email" value="{{aluno.email}}" required placeholder="seunome@gmail.com">
+
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" name="senha" value="{{aluno.senha}}" required placeholder="12345678">
+
+  <div class="botoes-form">
+    <button type="submit" class="btn btn-verde">Salvar</button>
+    <a class="btn btn-cinza" href="/alunos">Cancelar</a>
+  </div>
+</form>
+</div>

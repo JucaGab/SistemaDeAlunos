@@ -1,0 +1,25 @@
+<div class="perfil-card">
+  <div class="perfil-topo">
+    <div class="perfil-avatar">{{aluno.nome.[0]}}</div>
+    <div>
+      <h2 class="perfil-nome">{{aluno.nome}}</h2>
+      <span class="perfil-id">ID #{{aluno.id}}</span>
+    </div>
+  </div>
+
+  <div class="perfil-info">
+    <div class="perfil-item">
+      <span class="perfil-label">RA</span>
+      <span class="perfil-valor">{{aluno.ra}}</span>
+    </div>
+    <div class="perfil-item">
+      <span class="perfil-label">E-mail</span>
+      <span class="perfil-valor">{{aluno.email}}</span>
+    </div>
+  </div>
+
+  <div class="botoes-form">
+    <a class="btn btn-cinza" href="/alunos">Voltar</a>
+    <a class="btn btn-verde" href="/alunos/{{aluno.id}}/editar">Editar</a>
+  </div>
+</div>
